@@ -1,10 +1,11 @@
 // Write your solution in this file!
 
 
-const employee = { name: "Sam"}
+const employee = { name: "Sam"};
 
 function updateEmployeeWithKeyAndValue(employee, key, value){
-    return Object.assign({}, employee, { [key]: value });
+    const employee2 = {...employee, [key]:value};
+    return employee2;
 }
 
 const newEmployee = updateEmployeeWithKeyAndValue(employee, 'streetAddress', '11 Broadway');
